@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard — SENA Mock</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">SENA <span class="dot">•</span></div>
+      <nav>
+        <button id="logoutBtn" class="btn ghost">Cerrar sesión</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container dashboard">
+    <section class="card">
+      <h2 id="welcome">Bienvenido</h2>
+      <p id="emailArea" class="muted"></p>
+      <div class="grid">
+        <div class="tile">🔍 Quick search</div>
+        <div class="tile">📊 Insights</div>
+        <div class="tile">⚙️ Settings</div>
+        <div class="tile">📁 Files</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

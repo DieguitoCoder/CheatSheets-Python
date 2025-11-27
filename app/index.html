@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — SENA Mock</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card login-card">
+      <h1 class="brand">SENA</h1>
+      <p class="lead">Accede a tu panel</p>
+
+      <form id="loginForm" class="form">
+        <label for="username">Usuario</label>
+        <input id="username" name="username" type="text" placeholder="ej. jabriD" required />
+
+        <label for="password">Contraseña</label>
+        <input id="password" name="password" type="password" placeholder="tu contraseña" required />
+
+        <button type="submit" class="btn primary">Ingresar</button>
+        <p id="msg" class="msg"></p>
+      </form>
+
+      <footer class="muted">Cuenta demo: <strong>user1 / pass123</strong></footer>
+    </section>
+    <aside class="card info">
+      <h3>¿Cómo funciona?</h3>
+      <p>El formulario hace fetch a <code>users.json</code> y valida las credenciales. Si coinciden, se guarda una sesión en <code>sessionStorage</code> y se redirige al dashboard.</p>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
